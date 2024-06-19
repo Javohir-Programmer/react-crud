@@ -1,3 +1,4 @@
 *{
     transition: .3s;
+    scroll-behavior: smooth;
 }
