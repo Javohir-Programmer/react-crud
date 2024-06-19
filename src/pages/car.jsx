@@ -69,8 +69,8 @@ const Car = () => {
     return (
         <div className="container mx-auto p-4" id='nmadr'>
             <div className="text-center mb-6">
-                <h1 className="text-3xl font-medium title-font mb-2 text-gray-900">Car Information</h1>
-                <p className="leading-relaxed text-gray-500">Manage car information easily.</p>
+                <h1 className="text-3xl font-medium title-font mb-2 text-gray-900">Crud </h1>
+                <p className="leading-relaxed text-gray-500">This project created by Javohir Coder.</p>
             </div>
             <div className="flex justify-center mb-6">
                 <div className="w-full max-w-md">
@@ -110,11 +110,11 @@ const Car = () => {
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {car.map(item => (
                     <div key={item.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img className="h-78 w-full object-cover" src={item.img} alt={item.name} />
-                        <div className="p-6">
-                            <h2 className="text-lg font-bold mb-2">{item.name}</h2>
-                            <p className="text-gray-700 mb-4">{item.job}</p>
-                            <div className="flex justify-between">
+                        <img className=" p-5 h-70 w-full object-cover" src={item.img} alt={item.name} />
+                        <div className="p-2">
+                            <h1 className="text-[35px] text-center font-bold mb-2">{item.name}</h1>
+                            <h2 className="text-gray-700 text-center text-[25px] mb-4">{item.job}</h2>
+                            <div className="flex justify-around">
                                 <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={() => handleDelete(item.id)}>
                                     Delete
                                 </button>
@@ -122,6 +122,7 @@ const Car = () => {
                                     <a href="#nmadr">Edit</a>
                                 </button>
                             </div>
+                            <br />
                         </div>
                     </div>
                 ))}
